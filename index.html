@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CopyCulture | Your Voice. Our Words.</title>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700;800&display=swap" rel="stylesheet">
+  <style>
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: 'Work Sans', sans-serif;
+      background-color: #D3E4C7;
+      color: #2C3D2D;
+    }
+    .hero {
+      background-color: #2C3D2D;
+      color: #D3E4C7;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 5rem;
+      font-weight: 800;
+      margin: 0;
+    }
+    .hero p {
+      font-size: 1.75rem;
+      font-weight: 400;
+      margin-top: 1rem;
+    }
+    .scroll-down {
+      margin-top: 2rem;
+      font-size: 1rem;
+      font-weight: 700;
+      background-color: #D3E4C7;
+      color: #2C3D2D;
+      padding: 0.75rem 1.5rem;
+      border-radius: 20px;
+      text-decoration: none;
+      animation: bounce 1.5s infinite;
+    }
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+    header {
+      background-color: #2C3D2D;
+      color: #D3E4C7;
+      padding: 1.5rem;
+      text-align: center;
+    }
+    nav a {
+      color: #D3E4C7;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 1.1rem;
+    }
+    section {
+      padding: 4rem 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    section:nth-of-type(2) { background-color: #D3E4C7; }
+    section:nth-of-type(3) { background-color: #9CAF8B; }
+    section:nth-of-type(4) { background-color: #D3E4C7; }
+    section:nth-of-type(5) { background-color: #9CAF8B; }
+    section:nth-of-type(6) { background-color: #D3E4C7; }
+    h2, h3 { font-weight: 700; }
+    .btn {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      background-color: #2C3D2D;
+      color: #D3E4C7;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 1.1rem;
+      border-radius: 4px;
+    }
+    .carousel {
+      position: relative;
+      overflow: hidden;
+      height: 140px;
+    }
+    .testimonial-slide {
+      opacity: 0;
+      position: absolute;
+      width: 100%;
+      transition: opacity 0.6s ease-in-out;
+    }
+    .testimonial-slide.active {
+      opacity: 1;
+      position: relative;
+    }
+    .trust-logos {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      padding-top: 1rem;
+    }
+    .trust-circle {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background-color: #ffffff88;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      text-align: center;
+      padding: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    }
+    .case-study {
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 1rem;
+      border-left: 4px solid #2C3D2D;
+      margin-bottom: 2rem;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      max-width: 500px;
+    }
+    input, textarea {
+      padding: 0.75rem;
+      font-size: 1rem;
+      border: 1px solid #2C3D2D;
+      border-radius: 4px;
+      width: 100%;
+    }
+    @media (max-width: 768px) {
+      h2 {
+        font-size: 1.75rem;
+      }
+      h3 {
+        font-size: 1.25rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+      .carousel {
+        height: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <section class="hero">
+    <h1>CopyCulture</h1>
+    <p>Your Voice. Our Words.</p>
+    <a href="#about" class="scroll-down">↓ Lost for Words? We're Here to Help.</a>
+  </section>
+  <header>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+  <section id="about"><h2>About CopyCulture</h2><p>At CopyCulture, we don’t just write — we translate your voice into words that work. This isn’t generic copy. It’s your story, sharpened.</p></section>
+  <section id="services"><h2>Our Services</h2><h3>Brand Voice Development</h3><p>We help you define how your brand sounds — and make sure it’s unmistakable in every word.</p><h3>Website Copywriting</h3><p>Clear, sharp, scroll-stopping copy that converts visitors into clients.</p><h3>Messaging Makeovers</h3><p>We take what you’re already saying — and make it stronger. Tighter hooks, clearer offers, bolder tone. No fluff. Just results.</p></section>
+  <section id="testimonials"><h2>Testimonials</h2><div class="carousel"><div class="testimonial-slide active"><p><em>"This section is currently a shrine to future praise. Stay tuned." — Probably someone important</em></p></div><div class="testimonial-slide"><p><em>"I haven’t worked with CopyCulture yet, but I already feel like they understand me." — Definitely not the founder’s friend</em></p></div><div class="testimonial-slide"><p><em>"If words were weapons, CopyCulture would be fully licensed." — A suspiciously enthusiastic imaginary client</em></p></div><div class="testimonial-slide"><p><em>Real reviews coming soon. Until then, enjoy the charm.</em></p></div></div></section>
+  <section id="portfolio"><h2>Portfolio</h2><div class="case-study"><h3>Next Client Here?</h3><p>Your project could be the next one we feature. DM “WRITE” to claim your slot.</p></div></section>
+  <section id="trust"><h2>Trusted By (Soon...)</h2><div class="trust-logos"><div class="trust-circle">Could Be You?</div><div class="trust-circle">Waiting Patiently</div><div class="trust-circle">Bold Vision</div><div class="trust-circle">Smart Move</div><div class="trust-circle">Your Logo Here</div></div></section>
+  <section id="contact"><h2>Let’s Work Together</h2><p>Sound like yourself. Sell like never before. DM “WRITE” on Instagram or drop us a message below.</p><form action="mailto:copycultur3@gmail.com" method="POST" enctype="text/plain"><input type="text" name="Name" placeholder="Your Name" required><input type="email" name="Email" placeholder="Your Email" required><textarea name="Message" rows="5" placeholder="Tell us what you're looking for..." required></textarea><button type="submit" class="btn">Send Message</button></form></section>
+  <footer><p>&copy; 2025 CopyCulture. Your Voice. Our Words.</p></footer>
+  <script>
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.testimonial-slide');
+    setInterval(() => {
+      slides[currentSlide].classList.remove('active');
+      currentSlide = (currentSlide + 1) % slides.length;
+      slides[currentSlide].classList.add('active');
+    }, 3500);
+  </script>
+</body>
+</html>
