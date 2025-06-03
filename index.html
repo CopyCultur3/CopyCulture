@@ -165,6 +165,35 @@
   </style>
 </head>
 <body>
-  <!-- Content stays unchanged -->
+  <section class="hero">
+    <h1>CopyCulture</h1>
+    <p>Your Voice. Our Words.</p>
+    <a href="#about" class="scroll-down">↓ Lost for Words? We're Here to Help.</a>
+  </section>
+  <header>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+  <section id="about"><h2>About CopyCulture</h2><p>At CopyCulture, we don’t just write — we translate your voice into words that work. This isn’t generic copy. It’s your story, sharpened.</p></section>
+  <section id="services"><h2>Our Services</h2><h3>Brand Voice Development</h3><p>We help you define how your brand sounds — and make sure it’s unmistakable in every word.</p><h3>Website Copywriting</h3><p>Clear, sharp, scroll-stopping copy that converts visitors into clients.</p><h3>Messaging Makeovers</h3><p>We take what you’re already saying — and make it stronger. Tighter hooks, clearer offers, bolder tone. No fluff. Just results.</p></section>
+  <section id="testimonials"><h2>Testimonials</h2><div class="carousel"><div class="testimonial-slide active"><p><em>"This section is currently a shrine to future praise. Stay tuned." — Probably someone important</em></p></div><div class="testimonial-slide"><p><em>"I haven’t worked with CopyCulture yet, but I already feel like they understand me." — Definitely not the founder’s friend</em></p></div><div class="testimonial-slide"><p><em>"If words were weapons, CopyCulture would be fully licensed." — A suspiciously enthusiastic imaginary client</em></p></div><div class="testimonial-slide"><p><em>Real reviews coming soon. Until then, enjoy the charm.</em></p></div></div></section>
+  <section id="portfolio"><h2>Portfolio</h2><div class="case-study"><h3>Next Client Here?</h3><p>Your project could be the next one we feature. DM “WRITE” to claim your slot.</p></div></section>
+  <section id="trust"><h2>Trusted By (Soon...)</h2><div class="trust-logos"><div class="trust-circle">Could Be You?</div><div class="trust-circle">Waiting Patiently</div><div class="trust-circle">Bold Vision</div><div class="trust-circle">Smart Move</div><div class="trust-circle">Your Logo Here</div></div></section>
+  <section id="contact"><h2>Let’s Work Together</h2><p>Sound like yourself. Sell like never before. DM “WRITE” on Instagram or drop us a message below.</p><form action="mailto:copycultur3@gmail.com" method="POST" enctype="text/plain"><input type="text" name="Name" placeholder="Your Name" required><input type="email" name="Email" placeholder="Your Email" required><textarea name="Message" rows="5" placeholder="Tell us what you're looking for..." required></textarea><button type="submit" class="btn">Send Message</button></form></section>
+  <footer><p>&copy; 2025 CopyCulture. Your Voice. Our Words.</p></footer>
+  <script>
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.testimonial-slide');
+    setInterval(() => {
+      slides[currentSlide].classList.remove('active');
+      currentSlide = (currentSlide + 1) % slides.length;
+      slides[currentSlide].classList.add('active');
+    }, 3500);
+  </script>
 </body>
 </html>
